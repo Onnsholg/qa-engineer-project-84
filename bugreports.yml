@@ -1,0 +1,149 @@
+---
+- summary: |
+    Не отображается иконка на против английского языка в окне выбора языка
+  environment: |
+    Vivaldi	6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app
+    2. нажать на кнопку "Язык"
+  expected-result: |
+    Появится окно со списком языков и флагами напротив них
+  actual-result: |
+    Появляется окно со списком языков но напротив английского языка отображается иконка ошибки загрузки изображения
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
+    
+- summary: |
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+  expected-result: |
+  actual-result: |
