@@ -1,4 +1,5 @@
 ---
+test-cases:
 - summary: |
     Успешное добавление товара в корзину
   status: pass
@@ -84,8 +85,8 @@
   status: fail
     
 - summary: |
-    Не успешное отображение товара по ключевому слову не присутствует в товарах
-  status: pass
+    Не успешное отображение товара по ключевому слову которое не встречается в товарах
+  status: fail
     
 - summary: |
     Успешный отображение товара по ключевому слову и фильтру производителя
@@ -101,7 +102,7 @@
     
 - summary: |
     Корректное отображение сайта на планшетах
-  status: fail
+  status: pass
     
 - summary: |
     Корректное отображение сайта на ноутбуках
@@ -110,3 +111,79 @@
 - summary: |
     Корректное отображение сайта на настольных компьютерах
   status: pass
+
+bugreports:
+- summary: |
+    Не работают фильтры после выбора пустого значения в фильтре категория
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    2. Выбрать в фильтре "Категория" пустое значение
+    3. Выбрать любой другой фильтр
+  expected-result: |
+    Отоброзятся только товары соответсвующие данным фильтрам
+  actual-result: |
+    Меню фильтров полностью перестаёт работать. Отображаются все товары независиммо от выбранных фильтров
+
+- summary: |
+    не корректная работа системы фильтров
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    2. Применить любой фильтр который не соответсвует товара мна странице
+  expected-result: |
+    Будут отображенны товары которые есть в магазине из не отображённых на странице
+  actual-result: |
+    Отображаются все товары
+
+- summary: |
+    Не коректная работа кнопки "Магазин"
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    2. Выбрат язык магазина как русский
+    3. Нажать на кнопку "Магазин"
+  expected-result: |
+    Пользователь останется на странице с товарами язык останется русским
+  actual-result: |
+    Язык сайта меняется на английский
+
+- summary: |
+    Возвращения удалёногоиз корзины товара в корзину
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    2. Добавить любой товар в корзину
+    3. Нажать на кнопку "Cart"
+    4. нажать на кнопку "Cleat cart"
+    5. Нажать на кнопку "Store"
+  expected-result: |
+    Пользователь перейдёт в каталог товаров и корзина останется пуста
+  actual-result: |
+    В корзине появляются только что удалённые товары. Если удалить товары кнопкой напротив товаров в корзине данный баг не наблюдается. Если очистить корзину нажать кнопку продолжить покупки и потом нажать кнопку магазин товар возвращается в корзину.
+
+- summary: |
+    Исчезновение кнопки дальше при выборе фильтра
+  environment: |
+    Vivaldi 6.8.3381.50 (Stable channel) (64 бита) 
+    Версия 15b94fed53cd008a92a36f14960ba30171a69f4d
+    ОС Windows 11 Version 24H2 (Build 26100.4061)
+  steps-to-reproduce: |
+    1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    2. Выбрать любой фильтр
+  expected-result: |
+    Фильтр применится
+  actual-result: |
+    После применения фильтра пропадает кнопа для перехода на следующию страницу католога при этом кнопка перехода на прошлую страницу остаётся
